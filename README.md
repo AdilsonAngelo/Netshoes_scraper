@@ -46,8 +46,7 @@ mongod
 ```
 ou 
 
-```sudo service mongod start
-```
+```sudo service mongod start```
 
 Para a instalação do pymongo se insere o seguinte comando:
 ```
