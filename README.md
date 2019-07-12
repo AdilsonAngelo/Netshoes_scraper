@@ -1,6 +1,6 @@
 # Teste Prático em Scrapy
 
-## 1.Descrição
+## 1 Descrição
 Esse projeto consiste do desenvolvimento de um scraper para obtenção de informações de produtos em sites de vendas on line. Para isso foi utilizada a ferramenta **Scrapy** e o banco de dados **MongoDB**. Como target foi escolhido o site de vendas de produtos esportivos  [Netshoes](https://www.netshoes.com.br/) do qual foram extraídas os seguinte atributos:
 
 
@@ -15,9 +15,10 @@ Esse projeto consiste do desenvolvimento de um scraper para obtenção de inform
 *    **valor_antigo:**
 
 
-##2.Execução
+## 2 Execução
 Para a execução são necessárias as seguintes etapas
-###2.1Scrapy 
+
+### 2.1 Scrapy 
 Instalação:
 
 
@@ -27,8 +28,8 @@ pip install scrapy
 ```
 
 
-
-### 2.2Mongodb
+ 
+### 2.2 Mongodb
 Instalação:
 ```
 pip install pymongo
@@ -38,10 +39,10 @@ Inicialização do servidor:
 ```
 mongod
 ```
-### 2.3Visualização dos Dados
+### 2.3 Visualização dos Dados
 Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável deve-se criar uma conexão com o servidor criado na seção 2.2
 
-### 2.4Execução do Projeto 
+### 2.4 Execução do Projeto 
 Para a execução do projeto é necessário o download do repositório através do comando
 
 ```git clone https://github.com/larifeliciana/Netshoes_scraper```
@@ -63,7 +64,7 @@ A váriavel search_string pode ser trocada pelo produto que se deseja buscar.
 
 Após esse comando os dados começaram a ser armazenados no servidor MongoDB e pode ser visualizado do Robo3t
 
-## 3Detalhes sobre o desenvolvimento
+## 3 Detalhes sobre o desenvolvimento
 
 Para o desenvolvimento desse projeto foram utilizados:
 
