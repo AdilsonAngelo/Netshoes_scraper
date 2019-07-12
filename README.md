@@ -24,7 +24,7 @@ Para a execução, são necessárias as etapas abaixo.
 
 
 ```
-pip install scrapy
+pip install Scrapy
 ```
 
 
@@ -35,9 +35,13 @@ pip install scrapy
 ```sudo apt-key adv –keyserver hkp://keyserver.ubuntu.com:80 –recv 7F0CEB10```
 
 ```echo “deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.lis ```
+
+
 ```sudo apt-get update```
 
-```apt-get install mongodb-org```
+```sudo apt-get install -y mongodb```
+
+```sudo systemctl enable mongodb```
 
 
 É necessária também a criação do diretório **db** em um diretório **data** na raiz do sistema. Após a instalação, o serviço pode ser inicializado com o seguinte comando:
@@ -46,7 +50,7 @@ mongod
 ```
 ou também pelo comando
 
-```sudo service mongod start```
+```sudo systemctl start mongodb```
 
 Para a instalação do PyMongo, o comando abaixo deve ser usado:
 ```
@@ -57,7 +61,11 @@ pip install pymongo
 Para melhor visualização dos dados, é recomendado o uso do software [Robo3T](https://robomongo.org). O usuário deverá abrir seu arquivo executável e conectar-se ao serviço criado na seção 2.2. O software *Robo3T* está disponível no site, estando disponível tanto para o sistema operacional Linux, quanto para o Windows. Os dados extrado do site poderão ser visualizados no banco **netshoesdb** na coleção **produtos**. 
 
 ### 2.4 Execução do Projeto 
-Para a execução do projeto, é necessário o download de seu repositório através do comando
+Para a execução do projeto, é necessário o download de seu repositório utilizando o *git* que pode ser instalado através do comando:
+
+```sudo apt-get install git.```
+
+Com o *git* instalado podemos clonar o repositório utilizando o comando abaixo.
 
 ```git clone https://github.com/larifeliciana/Netshoes_scraper```
 
