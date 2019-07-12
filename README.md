@@ -62,11 +62,11 @@ Para a execução do projeto é necessário o download do repositório através 
 ```git clone https://github.com/larifeliciana/Netshoes_scraper```
 
 No diretório Netshoes_scraper deve-se executar o seguinte comando para execução do projeto
-   
+  ```cd Netshoes_scraper```
    
  E para a execução da Spider:
  
- ```scrapy runspider netshoes/netshoes/spiders/Netshoes.py -a search_string="camiseta"```
+ ```scrapy runspider netshoes/spiders/Netshoes.py -a search_string="camiseta"```
  
 
 
@@ -80,9 +80,11 @@ Após esse comando os dados começaram a ser armazenados no servidor MongoDB e p
 Para o desenvolvimento desse projeto foram utilizados:
 
 
-
 * 1/2 hora para instalação de ferramentas
 * 1 hora de estudo das ferramentas a serem utilizadas
 * 1 hora para escolha e estudo do target
 * 3 horas para o desenvolvimento 
 * 1 hora para solução de bugs
+
+Não foi necessário o uso de manipulação de querystrings e chamadas assícronas.
+
