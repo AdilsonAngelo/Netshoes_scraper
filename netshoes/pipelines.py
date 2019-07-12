@@ -24,7 +24,7 @@ class NetshoesPipeline(object):
     def process_item(self, item, spider):
 
         if len([i for i in self.colecao.find({"url": item["url"]})]) < 1:  # Checa se item não já foi adicionado através do url
-            self.colecao.insert(dict(item))
+            self.colecao.insert(dict(item),check_keys=False)
 
         else:
             logging.info('## O produto a ser inserido ja foi adicionado anteriormente. roduto: %s', item["nome"])
