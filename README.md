@@ -4,15 +4,15 @@
 Esse projeto consiste do desenvolvimento de um scraper para obtenção de informações de produtos em sites de vendas on line. Para isso foi utilizada a ferramenta **Scrapy** e o banco de dados **MongoDB**. Como target foi escolhido o site de vendas de produtos esportivos  [Netshoes](https://www.netshoes.com.br/) do qual foram extraídas os seguinte atributos:
 
 
-*    **nome:** 
-*    **URL:**  
-*    **navegacao:**
-*    **imagem_principal:**
-*    **imagens_secundarias:**
-*    **caracteristicas:**
-*    **descricao:**
-*    **valor:**
-*    **valor_antigo:**
+*    **nome** 
+*    **URL**  
+*    **navegacao**
+*    **imagem_principal**
+*    **imagens_secundarias**
+*    **caracteristicas**
+*    **descricao**
+*    **valor**
+*    **valor_antigo**
 
 
 ## 2 Execução
@@ -40,7 +40,7 @@ Inicialização do servidor:
 mongod
 ```
 ### 2.3 Visualização dos Dados
-Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável deve-se criar uma conexão com o servidor criado na seção 2.2
+Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o servidor criado na seção 2.2
 
 ### 2.4 Execução do Projeto 
 Para a execução do projeto é necessário o download do repositório através do comando
