@@ -1,7 +1,7 @@
 # Teste Prático em Scrapy
 
 ## 1 Descrição
-Esse projeto consiste do desenvolvimento de um scraper para obtenção de informações de produtos em sites de vendas on line. Para isso foi utilizada a ferramenta **Scrapy** e o banco de dados **MongoDB**. Como target foi escolhido o site de vendas de produtos esportivos  [Netshoes](https://www.netshoes.com.br/) do qual foram extraídas os seguinte atributos:
+Esse projeto consiste de um scraper para obtenção de informações de produtos em sites de vendas on line. Para isso foi utilizada a ferramenta **Scrapy** e o banco de dados **MongoDB**. Como target foi escolhido o site de vendas de produtos esportivos  [Netshoes](https://www.netshoes.com.br/) do qual foram extraídos os seguinte atributos:
 
 
 *    **nome** 
@@ -40,7 +40,7 @@ pip install scrapy
 ```apt-get install mongodb-org```
 
 
-É necessário também a criação dos diretórios data/db na raiz do sistema. Após a instalação o serviço pode ser inicializado com o seguinte comando:
+É necessário também a criação do diretório **db** em um diretório **data** na raiz do sistema. Após a instalação o serviço pode ser inicializado com o seguinte comando:
 ```
 mongod
 ```
@@ -54,18 +54,18 @@ pip install pymongo
 ```
 
 ### 2.3 Visualização dos Dados
-Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o servidor criado na seção 2.2. No site está disponível download tanto para Linux quando Windows. Os dados extrado do site podero ser visualizados no banco **netshoesdb** na coleção **produtos**. 
+Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o serviço criado na seção 2.2. No site está disponível download tanto para Linux quando Windows. Os dados extrado do site podero ser visualizados no banco **netshoesdb** na coleção **produtos**. 
 
 ### 2.4 Execução do Projeto 
 Para a execução do projeto é necessário o download do repositório através do comando
 
 ```git clone https://github.com/larifeliciana/Netshoes_scraper```
 
-No diretório Netshoes_scraper deve-se executar o seguinte comando para execução do projeto
+É necessrio a execução do comando
 
   ```cd Netshoes_scraper```
    
- E para a execução da Spider:
+para ter acesso ao projeto e para a execução da Spider:
  
  ```scrapy runspider netshoes/spiders/Netshoes.py -a search_string="camiseta"```
  
@@ -84,7 +84,7 @@ Para o desenvolvimento desse projeto foram utilizados:
 * 1/2 hora para instalação de ferramentas
 * 1 hora de estudo das ferramentas a serem utilizadas
 * 1 hora para escolha e estudo do target
-* 3 horas para o desenvolvimento 
+* 4 horas para o desenvolvimento 
 * 1 hora para solução de bugs
 
 Não foi necessário o uso de manipulação de querystrings e chamadas assícronas.
