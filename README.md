@@ -18,8 +18,8 @@ Esse projeto consiste do desenvolvimento de um scraper para obtenção de inform
 ## 2 Execução
 Para a execução são necessárias as seguintes etapas
 
-### 2.1 Scrapy 
-Instalação:
+### 2.1 Instalação Scrapy 
+
 
 
 
@@ -29,33 +29,45 @@ pip install scrapy
 
 
  
-### 2.2 Mongodb
-Instalação:
+### 2.2 Instalação Mongodb e pymongo
+ O MondoDB pode ser baixo e instalado no site [MongoDB](https://www.mongodb.com/download-center/community) ou através dos seguintes comandos no terminal linux:
+ 
+```sudo apt-key adv –keyserver hkp://keyserver.ubuntu.com:80 –recv 7F0CEB10```
+
+```echo “deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse” | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.lis ```
+```sudo apt-get update```
+
+```apt-get install mongodb-org```
+
+
+Após a instalação o serviço pode ser inicializado com o seguinte comando:
+```
+mongod
+```
+ou 
+
+```sudo service mongod start
+```
+
+Para a instalação do pymongo se insere o seguinte comando:
 ```
 pip install pymongo
 ```
 
-Inicialização do servidor:
-```
-mongod
-```
 ### 2.3 Visualização dos Dados
-Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o servidor criado na seção 2.2
+Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o servidor criado na seção 2.2. No site está disponível download tanto para Linux quando Windows.
 
 ### 2.4 Execução do Projeto 
 Para a execução do projeto é necessário o download do repositório através do comando
 
 ```git clone https://github.com/larifeliciana/Netshoes_scraper```
 
-No diretório Netshoes_scraper deve-se executar o seguinte comando para entrar no diretório principal do projeto
-
-   ``` cd netshoes ```
-   
+No diretório Netshoes_scraper deve-se executar o seguinte comando para execução do projeto
    
    
  E para a execução da Spider:
  
- ```scrapy runspider netshoes/spiders/Netshoes.py -a search_string="camiseta"```
+ ```scrapy runspider netshoes/netshoes/spiders/Netshoes.py -a search_string="camiseta"```
  
 
 
