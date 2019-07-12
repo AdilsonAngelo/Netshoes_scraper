@@ -81,7 +81,7 @@ Para o desenvolvimento desse projeto foram utilizados:
 
 
 
-* 1/2 minutos para instalação de ferramentas
+* 1/2 hora para instalação de ferramentas
 * 1 hora de estudo das ferramentas a serem utilizadas
 * 1 hora para escolha e estudo do target
 * 3 horas para o desenvolvimento 
