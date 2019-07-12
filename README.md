@@ -40,7 +40,7 @@ pip install scrapy
 ```apt-get install mongodb-org```
 
 
-Após a instalação o serviço pode ser inicializado com o seguinte comando:
+É necessário também a criação dos diretórios data/db na raiz do sistema. Após a instalação o serviço pode ser inicializado com o seguinte comando:
 ```
 mongod
 ```
