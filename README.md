@@ -54,7 +54,7 @@ pip install pymongo
 ```
 
 ### 2.3 Visualização dos Dados
-Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o servidor criado na seção 2.2. No site está disponível download tanto para Linux quando Windows.
+Para melhor visualização dos dados é recomendado o uso do software [Robo3T](https://robomongo.org). O mesmo deve ser instalado e ao abrir seu executável conectar-se com o servidor criado na seção 2.2. No site está disponível download tanto para Linux quando Windows. Os dados extrado do site podero ser visualizados no banco **netshoesdb** na coleção **produtos**. 
 
 ### 2.4 Execução do Projeto 
 Para a execução do projeto é necessário o download do repositório através do comando
