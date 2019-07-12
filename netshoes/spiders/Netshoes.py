@@ -61,11 +61,11 @@ class NetshoesSpider(scrapy.Spider):
 
 
 
-        produto["valor"] = float(response.xpath("//strong[@itemprop=\"price\"]/text()").extract_first().split(' ')[1].replace(",","."))
+        produto["valor"] = float(response.xpath("//strong[@itemprop=\"price\"]/text()").extract_first().split(' ')[1].replace(".","").replace(",","."))
 
 
         try:
-            produto["valor_antigo"] = float(response.xpath("//del[@class=\"default-price reduce \"]/text()").extract_first().split(' ')[1].replace(",","."))
+            produto["valor_antigo"] = float(response.xpath("//del[@class=\"default-price reduce \"]/text()").extract_first().split(' ')[1].replace(".","").replace(".","").replace(",","."))
         except:
             produto["valor_antigo"] = produto["valor"]
 
