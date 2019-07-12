@@ -62,6 +62,7 @@ Para a execução do projeto é necessário o download do repositório através 
 ```git clone https://github.com/larifeliciana/Netshoes_scraper```
 
 No diretório Netshoes_scraper deve-se executar o seguinte comando para execução do projeto
+
   ```cd Netshoes_scraper```
    
  E para a execução da Spider:
