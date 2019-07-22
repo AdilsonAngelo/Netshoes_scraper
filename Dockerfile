@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-FROM mongo:3.6-xenial
 FROM python:3.7.4-buster
 
 ENV PYENV_ROOT="/root/.pyenv" \
@@ -22,8 +21,6 @@ RUN pyenv global 3.7.4
 RUN pyenv rehash
 
 WORKDIR /home/onboarding
-RUN pip install --upgrade pip
+RUN pip install -U pip
 RUN pip install pipenv
 RUN pipenv install
-
-RUN mongod --port 27018
