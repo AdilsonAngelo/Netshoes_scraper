@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pep8 = "1.7.1"
+
+[packages]
+pymongo = "3.8.0"
+scrapy = "1.7.0"
+pytest = "5.0.1"
+sklearn = "0.21.2"
+pandas = "0.25.0"
+
+[requires]
+python_version = "3.7"
